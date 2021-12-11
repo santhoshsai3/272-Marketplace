@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loginForm() {
+            document.myform.submit();
+            document.myform.action = "users.php";
+        }
+    </script>
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+box-sizing: border-box;
+}
+body {
+background-image: url('bg1.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+display: flex;
+position: relative;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+color: white;
+}
+
+.brand-title {
+font-size: 1.5rem;
+margin: .5rem;
+}
+
+.navbar-links {
+height: 100%;
+}
+
+.navbar-links ul {
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.navbar-links li {
+list-style: none;
+}
+
+.navbar-links li a {
+display: block;
+text-decoration: none;
+color: white;
+padding: 1rem;
+}
+
+.navbar-links li:hover {
+background-color: #555;
+}
+
+.toggle-button {
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 21px;
+}
+
+.toggle-button .bar {
+height: 3px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.toggle-button {
+  display: flex;
+}
+
+.navbar-links {
+  display: none;
+  width: 100%;
+}
+
+.navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar-links ul li {
+  text-align: center;
+}
+
+.navbar-links ul li a {
+  padding: .5rem 1rem;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+font-family: Raleway;
+}
+
+/* html {
+background:"background.jpg";
+} */
+
+.side-links {
+position: absolute;
+bottom: 15px;
+right: 15px;
+}
+
+.side-link {
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+margin-bottom: 10px;
+color: white;
+width: 180px;
+padding: 10px 0;
+border-radius: 10px;
+}
+
+.side-link-youtube {
+background-color: red;
+}
+
+.side-link-twitter {
+background-color: #1DA1F2;
+}
+
+.side-link-github {
+background-color: #6e5494;
+}
+
+.side-link-text {
+margin-left: 10px;
+font-size: 18px;
+}
+
+.side-link-icon {
+color: white;
+font-size: 30px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background:transparent;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+  </style>
+</head>
+<body onload="loginform()">
+  <nav class="navbar">
+    <div class="brand-title">Cricket Store</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="services.php">Services</a></li>
+        <li><a href = "login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form" action="users.php" name="myform" method="post">
+            <input type="text" placeholder="username" name="USERNAME" />
+            <input type="password" placeholder="password" name="PASSWORD"/>
+            <button value="Login">login</button>
+          </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
