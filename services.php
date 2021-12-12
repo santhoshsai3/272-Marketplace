@@ -254,16 +254,7 @@ if(isset($_POST['buttonStumps'])) {
 }
 if(isset($_POST['buttonSubmit'])) {
     print_r($_COOKIE)
-    if(isset($_COOKIE)){
-        $lastFive = array_slice($_COOKIE, -5);
-        // print_r($lastFive);
-        foreach($lastFive as $path=>$count){
-          rsort($count);
-        foreach($count as $value){
-          echo $path . " visited " . $value . " times.<br>";
-        }
-      }
-    }
+   
     
     $reverseCookie=array_reverse($_COOKIE);
     foreach ( $reverseCookie as $key => $value )
