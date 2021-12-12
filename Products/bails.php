@@ -46,6 +46,29 @@ else
 <?php
     }
 ?>
+<?php
+if(isset($_POST['buttonSubmit'])) {
+    
+    if(isset($_POST['buttonSubmit'])) {
+      $reverseCookie=array_reverse($_COOKIE);
+      foreach ( $reverseCookie as $key => $value )
+      {
+          if($number == 5){
+              break;
+          }
+          print_r($value);
+          echo "<br>";
+          $number++;
+      }
+      $past = time() - 3600;
+      foreach ( $reverseCookie as $key => $value )
+      {
+          unset($_COOKIE[$key]);
+          setcookie($key, '', time() - 3600, '/');
+  
+      }
+  }
+  ?>
 </body>
 
 </html>
