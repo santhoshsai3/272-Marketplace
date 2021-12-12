@@ -253,6 +253,7 @@ if(isset($_POST['buttonStumps'])) {
     setcookie("buttonStumps", "Stumps", time()+30*24*60*60);
 }
 if(isset($_POST['buttonSubmit'])) {
+    print_r($_COOKIE)
     if(isset($_COOKIE)){
         $lastFive = array_slice($_COOKIE, -5);
         // print_r($lastFive);
