@@ -253,7 +253,7 @@ if(isset($_POST['buttonStumps'])) {
     setcookie("buttonStumps", "Stumps", time()+30*24*60*60);
 }
 
-  if(isset($_POST['buttonSubmit'])) {
+if(isset($_POST['buttonSubmit'])) {
     $reverseCookie=array_reverse($_COOKIE);
     foreach ( $reverseCookie as $key => $value )
     {
@@ -269,10 +269,8 @@ if(isset($_POST['buttonStumps'])) {
     {
         unset($_COOKIE[$key]);
         setcookie($key, '', time() - 3600, '/');
-
     }
 }
     
 }
 ?>
-
