@@ -204,52 +204,52 @@ body {
 static $number = 0;
 if(isset($_POST['buttonBall'])) {
     echo "<center>Click here to know more about cricket balls</center>";
-    echo '<center><a href="Products/ball.html">Click here</a></center>';
+    echo '<center><a href="Products/ball.php">Click here</a></center>';
     setcookie("buttonBall", "Ball", time()+30*24*60*60);
 }
 if(isset($_POST['buttonBat'])) {
     echo "<center>Click here to know more about cricket bats</center>";
-    echo '<center><a href="Products/bat.html">Click here</a></center>';
+    echo '<center><a href="Products/bat.php">Click here</a></center>';
     setcookie("buttonBat", "Bat", time()+30*24*60*60);
 }
 if(isset($_POST['buttonHelmet'])) {
     echo "<center>Click here to know more about Helmets</center>";
-    echo '<center><a href="Products/helmet.html">Click here</a></center>';
+    echo '<center><a href="Products/helmet.php">Click here</a></center>';
     setcookie("buttonHelmet", "Helmet", time()+30*24*60*60);
 }
 if(isset($_POST['buttonPads'])) {
     echo "<center>Click here to know more about batting pads</center>";
-    echo '<center><a href="Products/pads.html">Click here</a></center>';
+    echo '<center><a href="Products/pads.php">Click here</a></center>';
     setcookie("buttonPads", "Pads", time()+30*24*60*60);
 }
 if(isset($_POST['buttonGloves'])) {
     echo "<center>Click here to know more about batting gloves</center>";
-    echo '<center><a href="Products/gloves.html">Click here</a></center>';
+    echo '<center><a href="Products/gloves.php">Click here</a></center>';
     setcookie("buttonGloves", "Gloves", time()+30*24*60*60);
 }
 if(isset($_POST['buttonSleeves'])) {
     echo "<center>Click here to know more about batting sleeves</center>";
-    echo '<center><a href="Products/sleeves.html">Click here</a></center>';
+    echo '<center><a href="Products/sleeves.php">Click here</a></center>';
     setcookie("buttonSleeves", "Sleeves", time()+30*24*60*60);
 }
 if(isset($_POST['buttonBails'])) {
     echo "<center>Click here to know more about bails</center>";
-    echo '<center><a href="Products/bails.html">Click here</a></center>';
+    echo '<center><a href="Products/bails.php">Click here</a></center>';
     setcookie("buttonBails", "Bails", time()+30*24*60*60);
 }
 if(isset($_POST['buttonGuard'])) {
     echo "<center>Click here to know more about guard</center>";
-    echo '<center><a href="Products/guard.html">Click here</a></center>';
+    echo '<center><a href="Products/guard.php">Click here</a></center>';
     setcookie("buttonGuard", "Guard", time()+30*24*60*60);
 }
 if(isset($_POST['buttonBoundary'])) {
     echo "<center>Click here to know more about boundary</center>";
-    echo '<center><a href="Products/boundary.html">Click here</a></center>';
+    echo '<center><a href="Products/boundary.php">Click here</a></center>';
     setcookie("buttonBoundary", "Boundary", time()+30*24*60*60);
 }
 if(isset($_POST['buttonStumps'])) {
     echo "<center>Click here to know more about stumps</center>";
-    echo '<center><a href="Products/stumps.html">Click here</a></center>';
+    echo '<center><a href="Products/stumps.php">Click here</a></center>';
     setcookie("buttonStumps", "Stumps", time()+30*24*60*60);
 }
 if(isset($_POST['buttonSubmit'])) {
