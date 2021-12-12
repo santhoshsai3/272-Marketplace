@@ -188,29 +188,4 @@ navbarLinks.classList.toggle('active')
       </div>
     </body>
 </html>
-<?php
-$visited =0;
-$curl = curl_init();
-$email='rohit@gmail.com';
-    $array1=array();
-    $array1['email']=$email;
-    $array1['companyName']='Cricket';
-    // $array1['productName']=$prod["Description"];
-    $array1['visited']=$visted++;
-    $data=json_encode($array1);
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://rohitky.me/REST/tracking.php',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>$data,
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/json'
-  ),
-));
-?>
 
