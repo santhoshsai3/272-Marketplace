@@ -174,7 +174,7 @@ navbarLinks.classList.toggle('active')
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="news.html">News</a></li>
